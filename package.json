@@ -1,0 +1,16 @@
+{
+  "name": "retool-image-processor",
+  "version": "1.0.0",
+  "description": "Image processing functions for Retool integration",
+  "main": "index.js",
+  "dependencies": {
+    "cloudinary": "^1.41.0"
+  },
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "echo 'No build step required'"
+  },
+  "keywords": ["image-processing", "retool", "cloudinary", "netlify"],
+  "author": "Your Name",
+  "license": "MIT"
+}
