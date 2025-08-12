@@ -30,6 +30,9 @@ exports.handler = async (event, context) => {
       case 'blur':
         command += ` -blur ${params.radius}`;
         break;
+      case 'remove-background':
+        command += ` -background none -alpha set -channel A -evaluate set 0 +channel -fuzz 10% -transparent white -filter Lanczos -resize 400% -unsharp 0x0.75+0.75+0.008 output.webp`;
+        break;
     }
     
     command += ` "${outputPath}"`;
